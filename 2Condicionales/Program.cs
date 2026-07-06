@@ -73,3 +73,26 @@ else
 {
     Console.WriteLine("No se cumple la condición");
 }
+
+
+// Vamos con otro ejemplo, pero ahora con el operador de negación (!)
+string sexo = "hombre";
+if (sexo != "hombre")
+{
+    Console.WriteLine("No es hombre");
+}
+else
+{
+    Console.WriteLine("Es hombre");
+}
+
+//Ahora probamos con el operador booleano
+bool usuarioAlta = true;
+if (usuarioAlta)
+{
+    Console.WriteLine("El usuario esta dado de alta");
+}
+else
+{
+    Console.WriteLine("El usuario no esta dado de alta");
+}
