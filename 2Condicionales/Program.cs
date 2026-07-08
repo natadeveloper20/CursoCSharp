@@ -96,3 +96,59 @@ else
 {
     Console.WriteLine("El usuario no esta dado de alta");
 }
+
+
+bool usuarioPremium = false;
+
+if(usuarioAlta && usuarioPremium)
+{
+    //
+}
+
+string nacionalidad = "Argentino";
+
+if (nacionalidad == "Uruguayo")
+{
+    Console.WriteLine("El usuario es de Uruguayo");
+}
+
+else if (nacionalidad == "Argentino")
+{
+    Console.WriteLine("El usuario es de Argentino");
+}
+
+else if (nacionalidad == "Español")
+{
+    Console.WriteLine("El usuario es de Español");
+}
+
+else
+{
+    Console.WriteLine("El usuario es de nacionalidad desconocida");
+}
+
+//Ahora vamos a ver el Switch, que nos permite tomar decisiones en nuestro programa de una manera mas ordenada y legible.
+nacionalidad = "Dominicano";
+switch (nacionalidad)
+{
+    case "Uruguayo":
+        Console.WriteLine("El usuario es de Uruguayo");
+        break;
+    case "Argentino":
+        Console.WriteLine("El usuario es de Argentino");
+        break;
+    case "Español":
+        Console.WriteLine("El usuario es de Español");
+        break;
+    default:
+        Console.WriteLine("El usuario es de nacionalidad desconocida");
+        break;
+}
+
+//Escribe un programa que ingrese por teclado la edad, el nombre y el sexo
+//Si es mayor de 18 y es hombre, que muestre Felicidades NOMBRE_AQUI eres un hombre y mayor de edad
+//Si es mayor de 18 y es mujer, que muestre Felicidades NOMBRE_AQUI eres una mujer y mayor de edad
+//sino se cumple ninguna de las condiciones anteriores, que muestre: "eres menor"
+//Programa que busque en la cadena "esto es una cadena de prueba porque estoy empezando a programar en Csharp" las palabras prueba y programar
+// si lo encuentra que imprima por pantalla "Encontrado"
+
