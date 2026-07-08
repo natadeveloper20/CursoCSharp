@@ -76,7 +76,7 @@ else
 
 
 // Vamos con otro ejemplo, pero ahora con el operador de negación (!)
-string sexo = "hombre";
+/*string sexo = "hombre";
 if (sexo != "hombre")
 {
     Console.WriteLine("No es hombre");
@@ -85,7 +85,7 @@ else
 {
     Console.WriteLine("Es hombre");
 }
-
+*/
 //Ahora probamos con el operador booleano
 bool usuarioAlta = true;
 if (usuarioAlta)
@@ -145,10 +145,46 @@ switch (nacionalidad)
         break;
 }
 
+//Ejercicio 1:
+
 //Escribe un programa que ingrese por teclado la edad, el nombre y el sexo
 //Si es mayor de 18 y es hombre, que muestre Felicidades NOMBRE_AQUI eres un hombre y mayor de edad
 //Si es mayor de 18 y es mujer, que muestre Felicidades NOMBRE_AQUI eres una mujer y mayor de edad
 //sino se cumple ninguna de las condiciones anteriores, que muestre: "eres menor"
+
+//Ejercicio 2:
 //Programa que busque en la cadena "esto es una cadena de prueba porque estoy empezando a programar en Csharp" las palabras prueba y programar
 // si lo encuentra que imprima por pantalla "Encontrado"
 
+Console.WriteLine("Ingrese su nombre:");
+string nombre = Console.ReadLine()!;
+
+Console.WriteLine("Ingrese su edad:");
+int edad = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Ingrese su sexo:");
+string sexo = Console.ReadLine()!;
+
+if (edad>18 && sexo == "Hombre")
+{
+    Console.WriteLine("Felicidades " + nombre + "eres un hombre y mayor de edad");
+}
+else if (edad>18 && sexo == "Mujer")
+{
+    Console.WriteLine("Felicidades " + nombre + "eres una mujer y mayor de edad");
+}
+else
+{
+    Console.WriteLine("Eres menor de edad");
+}
+
+string busqueda = "esto es una cadena de prueba porque estoy empezando a programar en Csharp";
+
+if (busqueda.Contains("prueba") && busqueda.Contains("programar"))
+{
+    Console.WriteLine("Encontrado");
+}
+else
+{
+    Console.WriteLine("No encontrado");
+}
