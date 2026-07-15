@@ -1,0 +1,14 @@
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\bin\Debug\net8.0\4Estructuras.exe
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\bin\Debug\net8.0\4Estructuras.deps.json
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\bin\Debug\net8.0\4Estructuras.runtimeconfig.json
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\bin\Debug\net8.0\4Estructuras.dll
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\bin\Debug\net8.0\4Estructuras.pdb
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\obj\Debug\net8.0\4Estructuras.GeneratedMSBuildEditorConfig.editorconfig
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\obj\Debug\net8.0\4Estructuras.AssemblyInfoInputs.cache
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\obj\Debug\net8.0\4Estructuras.AssemblyInfo.cs
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\obj\Debug\net8.0\4Estructuras.csproj.CoreCompileInputs.cache
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\obj\Debug\net8.0\4Estructuras.dll
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\obj\Debug\net8.0\refint\4Estructuras.dll
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\obj\Debug\net8.0\4Estructuras.pdb
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\obj\Debug\net8.0\4Estructuras.genruntimeconfig.cache
+D:\CursoCSharp-main\CursoCSharp-main\4Estructuras\obj\Debug\net8.0\ref\4Estructuras.dll
