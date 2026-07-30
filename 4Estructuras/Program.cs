@@ -1,5 +1,6 @@
 ﻿// 4 Estructuras de Datos
 
+// 1- Primer parte: ARRAYS
 
 //Aca le llamamos arrays
 string[] numeros = {"Manzana", "Banana", "Cereza"};
@@ -38,6 +39,9 @@ for (int i = 0; i < edades.Length; i++)
 {
     Console.WriteLine(edades[i]);
 }
+
+
+// 2- Segunda parte: LISTAS
 
 //Ahora vamos con listas, que son un tipo de estructura de datos más flexible que los arrays
 
@@ -82,6 +86,9 @@ Console.WriteLine($"La capacidad de la lista es: {elementosEnLista}");
 //Ahora damos una limpieza a la lista, para que quede vacía y podamos ver que la capacidad de la lista sigue siendo la misma
 personas.Clear();
 
+
+// 3- Tercera parte: DICCIONARIOS
+
 //Ahora vamos a ver los diccionarios, que son una estructura de datos que nos permite almacenar pares de clave-valor, donde cada clave es única y se utiliza para acceder a su valor correspondiente
 Dictionary<string, int> edadesPersonas = new Dictionary<string, int>();
 
@@ -114,4 +121,92 @@ foreach (var estudiante in notasEstudiantes)
 {
     double promedio = estudiante.Value.Average();
     Console.WriteLine($"El promedio de {estudiante.Key} es: {promedio}");
+}
+
+
+//Ejercicios:
+// Arrays:
+// a- Escribe un codigo para sumar todos los elementos e imprimir los resultados
+// b- Encuentra y muestra el mayor elemento de un array de enteros
+// c- Hacer un programa que pida 3 numeros por consola, guardarlos en un array de enteros y finalmente recorrer el array y sumarlos mostrando el resultado por pantalla
+
+//Listas:
+// a- Crea una lista con los numeros del 1 al 10.
+// b- Elimina los numeros pares de la lista.
+// c- Imprime la lista resultante.
+
+//Diccionarios:
+// a- Crea un diccionario donde la clave sea el nombre de la persona.
+// y el valor sea su número de telefóno (Como string).
+// Agrega 3 contactos y muestre la agenda completa.
+
+
+//Resolución de los ejercicios:
+//Arrays:
+// a- Escribe un codigo para sumar todos los elementos e imprimir los resultados
+
+int [] numerosParaSumar = {1, 2, 3, 4, 5};
+//Ahora vamos a sumar todos los elementos del array y mostrar el resultado por pantalla
+int suma = 0;
+for (int i = 0; i < numerosParaSumar.Length; i++)
+{
+    suma += numerosParaSumar[i];
+}
+
+Console.WriteLine($"La suma de los elementos del array es: {suma}");
+
+// b- Encuentra y muestra el mayor elemento de un array de enteros
+int [] numerosParaEncontrarMayor = {1, 2, 3, 4, 5, 10, 7, 8, 9};
+int mayor = numerosParaEncontrarMayor[0];
+for (int i = 1; i < numerosParaEncontrarMayor.Length; i++)
+{
+    if (numerosParaEncontrarMayor[i] > mayor)
+    {
+        mayor = numerosParaEncontrarMayor[i];
+    }
+}
+Console.WriteLine($"El mayor elemento del array es: {mayor}");
+
+// c- Hacer un programa que pida 3 numeros por consola, guardarlos en un array de enteros y finalmente recorrer el array y sumarlos mostrando el resultado por pantalla
+int [] numerosIngresados = new int[3];
+for (int i = 0; i < 3; i++)
+{
+    Console.WriteLine($"Ingrese el numero {i + 1}:");
+    numerosIngresados[i] = Convert.ToInt32(Console.ReadLine());
+}
+int sumaIngresada = 0;
+for (int i = 0; i < numerosIngresados.Length; i++)
+{
+    sumaIngresada += numerosIngresados[i];
+}
+Console.WriteLine($"La suma de los numeros ingresados es: {sumaIngresada}");
+
+//Listas:
+// a- Crea una lista con los numeros del 1 al 10.
+List<int> listaNumeros = new List<int>();
+for (int i = 1; i <= 10; i++)
+{
+    listaNumeros.Add(i);
+}
+// b- Elimina los numeros pares de la lista.
+listaNumeros.RemoveAll(n => n % 2 == 0);
+// c- Imprime la lista resultante.
+Console.WriteLine("La lista resultante es:");
+foreach (int numero in listaNumeros)
+{
+    Console.WriteLine(numero);
+}
+
+//Diccionarios:
+// a- Crea un diccionario donde la clave sea el nombre de la persona.
+Dictionary<string, string> agendaTelefonica = new Dictionary<string, string>();
+// y el valor sea su número de telefóno (Como string).
+agendaTelefonica.Add("Ana", "123456789");
+agendaTelefonica.Add("Luis", "987654321");
+agendaTelefonica.Add("Carlos", "555555555");
+// muestre la agenda completa.
+Console.WriteLine("Agenda completa:");
+foreach (var contacto in agendaTelefonica)
+{
+    Console.WriteLine($"Nombre: {contacto.Key}, Teléfono: {contacto.Value}");
 }
